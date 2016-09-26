@@ -5,6 +5,8 @@
  */
 package com.mycompany.juice.model;
 
+import java.util.Objects;
+
 public class Juice {
 
     private int id;
@@ -35,5 +37,22 @@ public class Juice {
         this.price = price;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
+        Juice juice = (Juice) o;
+        return id == juice.id &&
+            Objects.equals(name, juice.name) &&
+            Objects.equals(price, juice.price);
+    }
 
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, name, price);
+    }
 }
