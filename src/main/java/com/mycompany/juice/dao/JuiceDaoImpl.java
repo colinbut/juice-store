@@ -7,6 +7,7 @@ package com.mycompany.juice.dao;
 
 import com.mycompany.juice.model.Juice;
 
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -18,7 +19,7 @@ public class JuiceDaoImpl implements JuiceDao {
         Juice juice = new Juice();
         juice.setId(1);
         juice.setName("Orange Juice");
-        juice.setPrice(2.50);
+        juice.setPrice(BigDecimal.valueOf(2.50));
 
         juices.add(juice);
     }
