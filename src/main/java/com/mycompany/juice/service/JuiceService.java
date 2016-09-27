@@ -3,7 +3,7 @@
  * | Copyright © 2016 Colin But. All rights reserved. 
  * |-------------------------------------------------
  */
-package com.mycompany.juice.services;
+package com.mycompany.juice.service;
 
 import com.mycompany.juice.model.Juice;
 
