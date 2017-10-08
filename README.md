@@ -1,4 +1,3 @@
 # Juice Store
 
-![Image of Juice]
-(etc/juice.jpg)
+![Image of Juice](etc/juice.jpg)
